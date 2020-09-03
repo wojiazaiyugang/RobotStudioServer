@@ -3,7 +3,7 @@
 """
 import os
 
-from util.system import kill_by_port
+from system import kill_by_port
 
-kill_by_port(8001)
-os.system("/usr/bin/python /root/server/socket_.py")
+kill_by_port(8000)
+os.system("/usr/bin/python /root/server/main.py")
