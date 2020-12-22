@@ -15,7 +15,8 @@ power_on = False  # 是否已经上电
 
 class RobotService(robot_pb2_grpc.RobotServiceServicer):
     def HelloWorld(self, request, context):
-        return robot_pb2.ResponseS(data1=f"hello world{request.arg1}")
+        print("看到我说明环境配置成功了！")
+        return robot_pb2.ResponseS(data1=f"hello1 world{request.arg1}")
 
     def TeachSetIndex(self, request, context):
         return robot.teach_set_robot_index(request.arg1)

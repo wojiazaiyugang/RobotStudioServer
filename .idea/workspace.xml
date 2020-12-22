@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa39ebc-f149-4142-9086-dbae64f4212b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/communication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restart_server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robot/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robot/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robot/data_structure.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot_python/util/system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yujiannan.py" beforeDir="false" afterPath="$PROJECT_DIR$/yujiannan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot_python/grpc/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot_python/grpc/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +163,7 @@
       <workItem from="1608599577959" duration="9936000" />
       <workItem from="1608611887265" duration="701000" />
       <workItem from="1608612600861" duration="13548000" />
-      <workItem from="1608628462073" duration="35000" />
+      <workItem from="1608628462073" duration="995000" />
     </task>
     <servers />
   </component>
@@ -179,6 +171,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RobotStudioServer$main.coverage" NAME="main Coverage Results" MODIFIED="1608628509008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot_python/grpc" />
     <SUITE FILE_PATH="coverage/RobotPython$yujiannan.coverage" NAME="yujiannan Coverage Results" MODIFIED="1608611137673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RobotPython$main.coverage" NAME="main Coverage Results" MODIFIED="1608625570558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot_python/grpc" />
     <SUITE FILE_PATH="coverage/RobotPython$robot.coverage" NAME="robot Coverage Results" MODIFIED="1608604280748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot_python" />

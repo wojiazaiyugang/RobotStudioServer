@@ -19,7 +19,7 @@
       <paths name="北航OS">
         <serverdata>
           <mappings>
-            <mapping deploy="/RobotPython" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/RobotStudioServer" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
