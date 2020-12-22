@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+message Request {
+}
+message RequestI {
+    sint64 arg1  = 1;
+}
+message RequestII {
+    sint64 arg1  = 1;
+    sint64 arg2  = 2;
+}
+message RequestS {
+    string arg1  = 1;
+}
+message RequestD {
+    double arg1  = 1;
+}
+
+message Response {
+}
+message ResponseS {
+    string data1 = 1;
+}
+message ResponseI {
+    sint64 data1 = 1;
+}
+message ResponseD {
+    double data1 = 1;
+}
+message ResponseRD{
+    repeated double data1 = 1;
+}
+
+service RobotService {
+    rpc HelloWorld (RequestI) returns (ResponseS);
+    rpc TeachSetIndex (RequestI) returns (ResponseI);
+    rpc TeachGetIndex (Request) returns (ResponseI);
+    rpc TeachSetTool (RequestS) returns (ResponseI);
+    rpc TeachGetTool (Request) returns (ResponseS);
+    rpc TeachSetWobj (RequestS) returns (ResponseI);
+    rpc TeachGetWobj (Request) returns (ResponseS);
+    rpc TeachSetCoordinate (RequestI) returns (ResponseI);
+    rpc TeachGetCoordinate (Request) returns (ResponseI);
+    rpc TeachGetNum (Request) returns (ResponseI);
+    rpc TeachGetDof (Request) returns (ResponseI);
+    rpc TeachGetJoint (Request) returns (ResponseRD);
+    rpc TeachStreamGetJoint (Request) returns (stream ResponseRD);
+    rpc TeachGetCartesian(Request) returns (ResponseRD);
+    rpc TeachStreamGetCartesian (Request) returns (stream ResponseRD);
+    rpc TeachSetVelocity(RequestD) returns (Response);
+    rpc TeachGetVelocity(Request) returns (ResponseD);
+    rpc TeachSetRunType (RequestI) returns (Response);
+    rpc TeachGetRunType (Request) returns (ResponseI);
+    rpc TeachClearMoveError (Request) returns (Response);
+    rpc TeachStartProject (RequestS) returns (ResponseI);
+    rpc TeachStopProject (Request) returns (ResponseI);
+    rpc TeachMoveStart (Request) returns (ResponseI);
+    rpc TeachMoveStop (Request) returns (ResponseI);
+    rpc TeachMoveHome (Request) returns (ResponseI);
+    rpc TeachMove (RequestII) returns (ResponseI);
+    rpc TeachStop (Request) returns (ResponseI);
+    rpc TeachCalibrateAxis (RequestI) returns (ResponseI);
+    rpc TeachCalibrate (Request) returns (ResponseI);
+}
