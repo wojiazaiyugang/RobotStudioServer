@@ -18,6 +18,9 @@ class RobotService(robot_pb2_grpc.RobotServiceServicer):
         print("看到我说明环境配置成功了！")
         return robot_pb2.ResponseS(data1=f"hello1 world{request.arg1}")
 
+    def GetSDKVersion(self, request, context):
+        return robot_pb2.ResponseS(data1=robot.get_sdk_version())
+
     def TeachSetIndex(self, request, context):
         return robot.teach_set_robot_index(request.arg1)
 

@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x0brobot.proto\"\t\n\x07Request\"\x18\n\x08RequestI\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\"\'\n\tRequestII\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\x12\x0c\n\x04\x61rg2\x18\x02 \x01(\x12\"\x18\n\x08RequestS\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\t\"\x18\n\x08RequestD\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x01\"\n\n\x08Response\"\x1a\n\tResponseS\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\t\"\x1a\n\tResponseI\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x12\"\x1a\n\tResponseD\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x01\"\x1b\n\nResponseRD\x12\r\n\x05\x64\x61ta1\x18\x01 \x03(\x01\x32\xb2\t\n\x0cRobotService\x12#\n\nHelloWorld\x12\t.RequestI\x1a\n.ResponseS\x12&\n\rTeachSetIndex\x12\t.RequestI\x1a\n.ResponseI\x12%\n\rTeachGetIndex\x12\x08.Request\x1a\n.ResponseI\x12%\n\x0cTeachSetTool\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetTool\x12\x08.Request\x1a\n.ResponseS\x12%\n\x0cTeachSetWobj\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetWobj\x12\x08.Request\x1a\n.ResponseS\x12+\n\x12TeachSetCoordinate\x12\t.RequestI\x1a\n.ResponseI\x12*\n\x12TeachGetCoordinate\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetNum\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetDof\x12\x08.Request\x1a\n.ResponseI\x12&\n\rTeachGetJoint\x12\x08.Request\x1a\x0b.ResponseRD\x12.\n\x13TeachStreamGetJoint\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12*\n\x11TeachGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD\x12\x32\n\x17TeachStreamGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12(\n\x10TeachSetVelocity\x12\t.RequestD\x1a\t.Response\x12(\n\x10TeachGetVelocity\x12\x08.Request\x1a\n.ResponseD\x12\'\n\x0fTeachSetRunType\x12\t.RequestI\x1a\t.Response\x12\'\n\x0fTeachGetRunType\x12\x08.Request\x1a\n.ResponseI\x12*\n\x13TeachClearMoveError\x12\x08.Request\x1a\t.Response\x12*\n\x11TeachStartProject\x12\t.RequestS\x1a\n.ResponseI\x12(\n\x10TeachStopProject\x12\x08.Request\x1a\n.ResponseI\x12&\n\x0eTeachMoveStart\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveStop\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveHome\x12\x08.Request\x1a\n.ResponseI\x12#\n\tTeachMove\x12\n.RequestII\x1a\n.ResponseI\x12!\n\tTeachStop\x12\x08.Request\x1a\n.ResponseI\x12+\n\x12TeachCalibrateAxis\x12\t.RequestI\x1a\n.ResponseI\x12&\n\x0eTeachCalibrate\x12\x08.Request\x1a\n.ResponseIb\x06proto3'
+  serialized_pb=b'\n\x0brobot.proto\"\t\n\x07Request\"\x18\n\x08RequestI\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\"\'\n\tRequestII\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\x12\x0c\n\x04\x61rg2\x18\x02 \x01(\x12\"\x18\n\x08RequestS\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\t\"\x18\n\x08RequestD\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x01\"\n\n\x08Response\"\x1a\n\tResponseS\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\t\"\x1a\n\tResponseI\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x12\"\x1a\n\tResponseD\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x01\"\x1b\n\nResponseRD\x12\r\n\x05\x64\x61ta1\x18\x01 \x03(\x01\x32\xd8\t\n\x0cRobotService\x12#\n\nHelloWorld\x12\t.RequestI\x1a\n.ResponseS\x12$\n\rGetSDKVersion\x12\x08.Request\x1a\t.RequestS\x12&\n\rTeachSetIndex\x12\t.RequestI\x1a\n.ResponseI\x12%\n\rTeachGetIndex\x12\x08.Request\x1a\n.ResponseI\x12%\n\x0cTeachSetTool\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetTool\x12\x08.Request\x1a\n.ResponseS\x12%\n\x0cTeachSetWobj\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetWobj\x12\x08.Request\x1a\n.ResponseS\x12+\n\x12TeachSetCoordinate\x12\t.RequestI\x1a\n.ResponseI\x12*\n\x12TeachGetCoordinate\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetNum\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetDof\x12\x08.Request\x1a\n.ResponseI\x12&\n\rTeachGetJoint\x12\x08.Request\x1a\x0b.ResponseRD\x12.\n\x13TeachStreamGetJoint\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12*\n\x11TeachGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD\x12\x32\n\x17TeachStreamGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12(\n\x10TeachSetVelocity\x12\t.RequestD\x1a\t.Response\x12(\n\x10TeachGetVelocity\x12\x08.Request\x1a\n.ResponseD\x12\'\n\x0fTeachSetRunType\x12\t.RequestI\x1a\t.Response\x12\'\n\x0fTeachGetRunType\x12\x08.Request\x1a\n.ResponseI\x12*\n\x13TeachClearMoveError\x12\x08.Request\x1a\t.Response\x12*\n\x11TeachStartProject\x12\t.RequestS\x1a\n.ResponseI\x12(\n\x10TeachStopProject\x12\x08.Request\x1a\n.ResponseI\x12&\n\x0eTeachMoveStart\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveStop\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveHome\x12\x08.Request\x1a\n.ResponseI\x12#\n\tTeachMove\x12\n.RequestII\x1a\n.ResponseI\x12!\n\tTeachStop\x12\x08.Request\x1a\n.ResponseI\x12+\n\x12TeachCalibrateAxis\x12\t.RequestI\x1a\n.ResponseI\x12&\n\x0eTeachCalibrate\x12\x08.Request\x1a\n.ResponseIb\x06proto3'
 )
 
 
@@ -417,7 +417,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   serialized_start=271,
-  serialized_end=1473,
+  serialized_end=1511,
   methods=[
   _descriptor.MethodDescriptor(
     name='HelloWorld',
@@ -429,9 +429,18 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(
+    name='GetSDKVersion',
+    full_name='RobotService.GetSDKVersion',
+    index=1,
+    containing_service=None,
+    input_type=_REQUEST,
+    output_type=_REQUESTS,
+    serialized_options=None,
+  ),
+  _descriptor.MethodDescriptor(
     name='TeachSetIndex',
     full_name='RobotService.TeachSetIndex',
-    index=1,
+    index=2,
     containing_service=None,
     input_type=_REQUESTI,
     output_type=_RESPONSEI,
@@ -440,7 +449,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetIndex',
     full_name='RobotService.TeachGetIndex',
-    index=2,
+    index=3,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -449,7 +458,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachSetTool',
     full_name='RobotService.TeachSetTool',
-    index=3,
+    index=4,
     containing_service=None,
     input_type=_REQUESTS,
     output_type=_RESPONSEI,
@@ -458,7 +467,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetTool',
     full_name='RobotService.TeachGetTool',
-    index=4,
+    index=5,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSES,
@@ -467,7 +476,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachSetWobj',
     full_name='RobotService.TeachSetWobj',
-    index=5,
+    index=6,
     containing_service=None,
     input_type=_REQUESTS,
     output_type=_RESPONSEI,
@@ -476,7 +485,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetWobj',
     full_name='RobotService.TeachGetWobj',
-    index=6,
+    index=7,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSES,
@@ -485,7 +494,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachSetCoordinate',
     full_name='RobotService.TeachSetCoordinate',
-    index=7,
+    index=8,
     containing_service=None,
     input_type=_REQUESTI,
     output_type=_RESPONSEI,
@@ -494,7 +503,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetCoordinate',
     full_name='RobotService.TeachGetCoordinate',
-    index=8,
+    index=9,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -503,7 +512,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetNum',
     full_name='RobotService.TeachGetNum',
-    index=9,
+    index=10,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -512,7 +521,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetDof',
     full_name='RobotService.TeachGetDof',
-    index=10,
+    index=11,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -521,7 +530,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetJoint',
     full_name='RobotService.TeachGetJoint',
-    index=11,
+    index=12,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSERD,
@@ -530,7 +539,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachStreamGetJoint',
     full_name='RobotService.TeachStreamGetJoint',
-    index=12,
+    index=13,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSERD,
@@ -539,7 +548,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetCartesian',
     full_name='RobotService.TeachGetCartesian',
-    index=13,
+    index=14,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSERD,
@@ -548,7 +557,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachStreamGetCartesian',
     full_name='RobotService.TeachStreamGetCartesian',
-    index=14,
+    index=15,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSERD,
@@ -557,7 +566,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachSetVelocity',
     full_name='RobotService.TeachSetVelocity',
-    index=15,
+    index=16,
     containing_service=None,
     input_type=_REQUESTD,
     output_type=_RESPONSE,
@@ -566,7 +575,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetVelocity',
     full_name='RobotService.TeachGetVelocity',
-    index=16,
+    index=17,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSED,
@@ -575,7 +584,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachSetRunType',
     full_name='RobotService.TeachSetRunType',
-    index=17,
+    index=18,
     containing_service=None,
     input_type=_REQUESTI,
     output_type=_RESPONSE,
@@ -584,7 +593,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachGetRunType',
     full_name='RobotService.TeachGetRunType',
-    index=18,
+    index=19,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -593,7 +602,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachClearMoveError',
     full_name='RobotService.TeachClearMoveError',
-    index=19,
+    index=20,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSE,
@@ -602,7 +611,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachStartProject',
     full_name='RobotService.TeachStartProject',
-    index=20,
+    index=21,
     containing_service=None,
     input_type=_REQUESTS,
     output_type=_RESPONSEI,
@@ -611,7 +620,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachStopProject',
     full_name='RobotService.TeachStopProject',
-    index=21,
+    index=22,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -620,7 +629,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachMoveStart',
     full_name='RobotService.TeachMoveStart',
-    index=22,
+    index=23,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -629,7 +638,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachMoveStop',
     full_name='RobotService.TeachMoveStop',
-    index=23,
+    index=24,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -638,7 +647,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachMoveHome',
     full_name='RobotService.TeachMoveHome',
-    index=24,
+    index=25,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -647,7 +656,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachMove',
     full_name='RobotService.TeachMove',
-    index=25,
+    index=26,
     containing_service=None,
     input_type=_REQUESTII,
     output_type=_RESPONSEI,
@@ -656,7 +665,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachStop',
     full_name='RobotService.TeachStop',
-    index=26,
+    index=27,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,
@@ -665,7 +674,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachCalibrateAxis',
     full_name='RobotService.TeachCalibrateAxis',
-    index=27,
+    index=28,
     containing_service=None,
     input_type=_REQUESTI,
     output_type=_RESPONSEI,
@@ -674,7 +683,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='TeachCalibrate',
     full_name='RobotService.TeachCalibrate',
-    index=28,
+    index=29,
     containing_service=None,
     input_type=_REQUEST,
     output_type=_RESPONSEI,

@@ -18,6 +18,11 @@ class RobotServiceStub(object):
                 request_serializer=robot__pb2.RequestI.SerializeToString,
                 response_deserializer=robot__pb2.ResponseS.FromString,
                 )
+        self.GetSDKVersion = channel.unary_unary(
+                '/RobotService/GetSDKVersion',
+                request_serializer=robot__pb2.Request.SerializeToString,
+                response_deserializer=robot__pb2.RequestS.FromString,
+                )
         self.TeachSetIndex = channel.unary_unary(
                 '/RobotService/TeachSetIndex',
                 request_serializer=robot__pb2.RequestI.SerializeToString,
@@ -164,6 +169,12 @@ class RobotServiceServicer(object):
     """Missing associated documentation comment in .proto file"""
 
     def HelloWorld(self, request, context):
+        """Missing associated documentation comment in .proto file"""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetSDKVersion(self, request, context):
         """Missing associated documentation comment in .proto file"""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -345,6 +356,11 @@ def add_RobotServiceServicer_to_server(servicer, server):
                     request_deserializer=robot__pb2.RequestI.FromString,
                     response_serializer=robot__pb2.ResponseS.SerializeToString,
             ),
+            'GetSDKVersion': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetSDKVersion,
+                    request_deserializer=robot__pb2.Request.FromString,
+                    response_serializer=robot__pb2.RequestS.SerializeToString,
+            ),
             'TeachSetIndex': grpc.unary_unary_rpc_method_handler(
                     servicer.TeachSetIndex,
                     request_deserializer=robot__pb2.RequestI.FromString,
@@ -508,6 +524,22 @@ class RobotService(object):
         return grpc.experimental.unary_unary(request, target, '/RobotService/HelloWorld',
             robot__pb2.RequestI.SerializeToString,
             robot__pb2.ResponseS.FromString,
+            options, channel_credentials,
+            call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetSDKVersion(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/RobotService/GetSDKVersion',
+            robot__pb2.Request.SerializeToString,
+            robot__pb2.RequestS.FromString,
             options, channel_credentials,
             call_credentials, compression, wait_for_ready, timeout, metadata)
 
