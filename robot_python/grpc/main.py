@@ -1,7 +1,7 @@
 import time
 import sys
 
-sys.path.append("/root/RobotPython")
+sys.path.append("/root/RobotStudioServer")
 from concurrent import futures
 
 import grpc
