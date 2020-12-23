@@ -1,0 +1,31 @@
+
+robot.MoveA(j9,v0)
+
+print("SFCInit")
+ret=robot.SFCInit("SFCtest", 1, 0, tool0, wobj0, 0)
+print(ret)
+
+print("SFCSetHybridForceMotionTargetForce")
+target_force={1,0,0,0,0,5}
+print(#target_force, target_force[1],target_force[6])
+ret=robot.SFCSetHybridForceMotionTargetForce("SFCtest", target_force)
+print(ret)
+
+print("SFCSetHybridForceMotionCtrlParam")
+P={0.01,0.01,0.01,0.01,0.01,0.01};
+I={0.001,0.001,0.001,0.001,0.001,0.001};
+D={0,0,0,0,0,0};
+ret=robot.SFCSetHybridForceMotionCtrlParam("SFCtest", P, I, D)
+print(ret)
+
+
+print("SFCStart")
+ret=robot.SFCStart("SFCtest");
+print(ret)
+
+print("sleep")
+robot.sleep(100000)
+
+print("SFCEnd")
+ret=robot.SFCEnd("SFCtest")
+print(ret)

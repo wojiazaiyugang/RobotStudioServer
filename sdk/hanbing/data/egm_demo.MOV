@@ -1,0 +1,12 @@
+
+print("start egm\n")
+
+robot.MoveA(jegm,v1,0,0,0)
+
+robot.EGMCreate("egmid", 0, 0, 1, 4, tool11, wobj0)
+
+robot.EGMRunJoint("egmid", 1)
+
+robot.EGMRelease("egmid")
+
+print("end egm\n")

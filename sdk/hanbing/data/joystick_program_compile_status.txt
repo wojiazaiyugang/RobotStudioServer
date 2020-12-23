@@ -1,0 +1,1 @@
+gcc: error: /home/hanbing/work/program/robot/config/data/XB4_V8.6.0.1/data/joystick_program.c: 没有那个文件或目录

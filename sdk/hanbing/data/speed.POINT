@@ -1,0 +1,37 @@
+
+[vpend]
+per1                           = 8
+per2                           = 8
+per3                           = 8
+per4                           = 8
+per5                           = 8
+per6                           = 8
+per_flag                       = 1
+tcp                            = 15
+tcp_flag                       = 2
+orl                            = 15
+
+[v0]
+per1                           = 3
+per2                           = 3
+per3                           = 3
+per4                           = 3
+per5                           = 3
+per6                           = 3
+per_flag                       = 2
+tcp                            = 15
+tcp_flag                       = 2
+orl                            = 5
+
+[v1]
+per1                           = 0.2
+per2                           = 0.2
+per3                           = 0.2
+per4                           = 0.2
+per5                           = 0.2
+per6                           = 0.2
+per_flag                       = 1
+tcp                            = 100
+tcp_flag                       = 1
+orl                            = 0.1
+

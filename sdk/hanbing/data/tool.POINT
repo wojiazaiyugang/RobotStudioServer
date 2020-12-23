@@ -1,0 +1,26 @@
+
+[tool0]
+robhold                        = 1
+tframe                         = toolframe0
+payload                        = payload0
+
+[tool1]
+robhold                        = 1
+tframe                         = toolframe11
+payload                        = payload2
+
+[tool2]
+robhold                        = 1
+tframe                         = toolframe2
+payload                        = payload0
+
+[tool10]
+robhold                        = 1
+tframe                         = toolframe10
+payload                        = payload0
+
+[tool11]
+robhold                        = 1
+tframe                         = toolframe11
+payload                        = payload2
+

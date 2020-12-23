@@ -1,0 +1,8 @@
+while (1) do
+
+robot.MoveA(j10,v0)
+robot.MoveA(j11,v0)
+robot.MoveA(j12,v0)
+
+
+end
