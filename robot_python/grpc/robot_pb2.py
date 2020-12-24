@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x0brobot.proto\"\t\n\x07Request\"\x18\n\x08RequestI\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\"\'\n\tRequestII\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\x12\x0c\n\x04\x61rg2\x18\x02 \x01(\x12\"\x18\n\x08RequestS\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\t\"\x18\n\x08RequestD\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x01\"\n\n\x08Response\"\x1a\n\tResponseS\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\t\"\x1a\n\tResponseI\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x12\"\x1a\n\tResponseD\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x01\"\x1b\n\nResponseRD\x12\r\n\x05\x64\x61ta1\x18\x01 \x03(\x01\x32\xd8\t\n\x0cRobotService\x12#\n\nHelloWorld\x12\t.RequestI\x1a\n.ResponseS\x12$\n\rGetSDKVersion\x12\x08.Request\x1a\t.RequestS\x12&\n\rTeachSetIndex\x12\t.RequestI\x1a\n.ResponseI\x12%\n\rTeachGetIndex\x12\x08.Request\x1a\n.ResponseI\x12%\n\x0cTeachSetTool\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetTool\x12\x08.Request\x1a\n.ResponseS\x12%\n\x0cTeachSetWobj\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetWobj\x12\x08.Request\x1a\n.ResponseS\x12+\n\x12TeachSetCoordinate\x12\t.RequestI\x1a\n.ResponseI\x12*\n\x12TeachGetCoordinate\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetNum\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetDof\x12\x08.Request\x1a\n.ResponseI\x12&\n\rTeachGetJoint\x12\x08.Request\x1a\x0b.ResponseRD\x12.\n\x13TeachStreamGetJoint\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12*\n\x11TeachGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD\x12\x32\n\x17TeachStreamGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12(\n\x10TeachSetVelocity\x12\t.RequestD\x1a\t.Response\x12(\n\x10TeachGetVelocity\x12\x08.Request\x1a\n.ResponseD\x12\'\n\x0fTeachSetRunType\x12\t.RequestI\x1a\t.Response\x12\'\n\x0fTeachGetRunType\x12\x08.Request\x1a\n.ResponseI\x12*\n\x13TeachClearMoveError\x12\x08.Request\x1a\t.Response\x12*\n\x11TeachStartProject\x12\t.RequestS\x1a\n.ResponseI\x12(\n\x10TeachStopProject\x12\x08.Request\x1a\n.ResponseI\x12&\n\x0eTeachMoveStart\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveStop\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveHome\x12\x08.Request\x1a\n.ResponseI\x12#\n\tTeachMove\x12\n.RequestII\x1a\n.ResponseI\x12!\n\tTeachStop\x12\x08.Request\x1a\n.ResponseI\x12+\n\x12TeachCalibrateAxis\x12\t.RequestI\x1a\n.ResponseI\x12&\n\x0eTeachCalibrate\x12\x08.Request\x1a\n.ResponseIb\x06proto3'
+  serialized_pb=b'\n\x0brobot.proto\"\t\n\x07Request\"\x18\n\x08RequestI\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\"\'\n\tRequestII\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x12\x12\x0c\n\x04\x61rg2\x18\x02 \x01(\x12\"\x18\n\x08RequestS\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\t\"\x18\n\x08RequestD\x12\x0c\n\x04\x61rg1\x18\x01 \x01(\x01\"\n\n\x08Response\"\x1a\n\tResponseS\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\t\"\x1a\n\tResponseI\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x12\"\x1a\n\tResponseD\x12\r\n\x05\x64\x61ta1\x18\x01 \x01(\x01\"\x1b\n\nResponseRD\x12\r\n\x05\x64\x61ta1\x18\x01 \x03(\x01\x32\xd9\t\n\x0cRobotService\x12#\n\nHelloWorld\x12\t.RequestI\x1a\n.ResponseS\x12%\n\rGetSDKVersion\x12\x08.Request\x1a\n.ResponseS\x12&\n\rTeachSetIndex\x12\t.RequestI\x1a\n.ResponseI\x12%\n\rTeachGetIndex\x12\x08.Request\x1a\n.ResponseI\x12%\n\x0cTeachSetTool\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetTool\x12\x08.Request\x1a\n.ResponseS\x12%\n\x0cTeachSetWobj\x12\t.RequestS\x1a\n.ResponseI\x12$\n\x0cTeachGetWobj\x12\x08.Request\x1a\n.ResponseS\x12+\n\x12TeachSetCoordinate\x12\t.RequestI\x1a\n.ResponseI\x12*\n\x12TeachGetCoordinate\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetNum\x12\x08.Request\x1a\n.ResponseI\x12#\n\x0bTeachGetDof\x12\x08.Request\x1a\n.ResponseI\x12&\n\rTeachGetJoint\x12\x08.Request\x1a\x0b.ResponseRD\x12.\n\x13TeachStreamGetJoint\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12*\n\x11TeachGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD\x12\x32\n\x17TeachStreamGetCartesian\x12\x08.Request\x1a\x0b.ResponseRD0\x01\x12(\n\x10TeachSetVelocity\x12\t.RequestD\x1a\t.Response\x12(\n\x10TeachGetVelocity\x12\x08.Request\x1a\n.ResponseD\x12\'\n\x0fTeachSetRunType\x12\t.RequestI\x1a\t.Response\x12\'\n\x0fTeachGetRunType\x12\x08.Request\x1a\n.ResponseI\x12*\n\x13TeachClearMoveError\x12\x08.Request\x1a\t.Response\x12*\n\x11TeachStartProject\x12\t.RequestS\x1a\n.ResponseI\x12(\n\x10TeachStopProject\x12\x08.Request\x1a\n.ResponseI\x12&\n\x0eTeachMoveStart\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveStop\x12\x08.Request\x1a\n.ResponseI\x12%\n\rTeachMoveHome\x12\x08.Request\x1a\n.ResponseI\x12#\n\tTeachMove\x12\n.RequestII\x1a\n.ResponseI\x12!\n\tTeachStop\x12\x08.Request\x1a\n.ResponseI\x12+\n\x12TeachCalibrateAxis\x12\t.RequestI\x1a\n.ResponseI\x12&\n\x0eTeachCalibrate\x12\x08.Request\x1a\n.ResponseIb\x06proto3'
 )
 
 
@@ -417,7 +417,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   serialized_start=271,
-  serialized_end=1511,
+  serialized_end=1512,
   methods=[
   _descriptor.MethodDescriptor(
     name='HelloWorld',
@@ -434,7 +434,7 @@ _ROBOTSERVICE = _descriptor.ServiceDescriptor(
     index=1,
     containing_service=None,
     input_type=_REQUEST,
-    output_type=_REQUESTS,
+    output_type=_RESPONSES,
     serialized_options=None,
   ),
   _descriptor.MethodDescriptor(

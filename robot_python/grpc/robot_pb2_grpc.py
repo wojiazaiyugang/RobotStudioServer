@@ -21,7 +21,7 @@ class RobotServiceStub(object):
         self.GetSDKVersion = channel.unary_unary(
                 '/RobotService/GetSDKVersion',
                 request_serializer=robot__pb2.Request.SerializeToString,
-                response_deserializer=robot__pb2.RequestS.FromString,
+                response_deserializer=robot__pb2.ResponseS.FromString,
                 )
         self.TeachSetIndex = channel.unary_unary(
                 '/RobotService/TeachSetIndex',
@@ -359,7 +359,7 @@ def add_RobotServiceServicer_to_server(servicer, server):
             'GetSDKVersion': grpc.unary_unary_rpc_method_handler(
                     servicer.GetSDKVersion,
                     request_deserializer=robot__pb2.Request.FromString,
-                    response_serializer=robot__pb2.RequestS.SerializeToString,
+                    response_serializer=robot__pb2.ResponseS.SerializeToString,
             ),
             'TeachSetIndex': grpc.unary_unary_rpc_method_handler(
                     servicer.TeachSetIndex,
@@ -539,7 +539,7 @@ class RobotService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/RobotService/GetSDKVersion',
             robot__pb2.Request.SerializeToString,
-            robot__pb2.RequestS.FromString,
+            robot__pb2.ResponseS.FromString,
             options, channel_credentials,
             call_credentials, compression, wait_for_ready, timeout, metadata)
 

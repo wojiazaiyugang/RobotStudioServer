@@ -28,11 +28,11 @@ def load_lib(lib_name: str, path: str = None) -> ctypes.CDLL:
 
 @dataclass
 class RobotLib:
-    dl: ctypes.CDLL = load_lib("libdl.so")
+    # dl: ctypes.CDLL = load_lib("libdl.so")
     # m: ctypes.CDLL = load_lib("libm.so")
-    rt: ctypes.CDLL = load_lib("librt.so")
-    modbus: ctypes.CDLL = load_lib("libmodbus.so")
-    nlopt: ctypes.CDLL = load_lib("libnlopt.so")
+    # rt: ctypes.CDLL = load_lib("librt.so")
+    # modbus: ctypes.CDLL = load_lib("libmodbus.so")
+    # nlopt: ctypes.CDLL = load_lib("libnlopt.so")
     RobotIQLib: ctypes.CDLL = load_lib("libRobotIQLib.so")
     ExtraLib2: ctypes.CDLL = load_lib("libExtraLib2.so")
     ExtraLib: ctypes.CDLL = load_lib("libExtraLib.so")

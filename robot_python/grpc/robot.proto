@@ -33,7 +33,7 @@ message ResponseRD{
 
 service RobotService {
     rpc HelloWorld (RequestI) returns (ResponseS);
-    rpc GetSDKVersion(Request) returns (RequestS);
+    rpc GetSDKVersion(Request) returns (ResponseS);
     rpc TeachSetIndex (RequestI) returns (ResponseI);
     rpc TeachGetIndex (Request) returns (ResponseI);
     rpc TeachSetTool (RequestS) returns (ResponseI);
